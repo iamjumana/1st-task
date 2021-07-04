@@ -11,7 +11,7 @@
   echo "Connected successfully <br>";
   $conn->close();}}
   
-  $sql = "one,two,three,four,five,six";
+  $sql=“SELECT one, two, three, four, five, six FROM why ORDER BY id DECN WHERE id=1”;
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
